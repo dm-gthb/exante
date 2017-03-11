@@ -1,0 +1,17 @@
+@mixin container() {
+  border: 1px dashed black;
+  width: 100%;
+  max-width: 1900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  @media (min-width: $screen-sm-min) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
