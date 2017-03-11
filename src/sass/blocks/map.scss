@@ -1,0 +1,16 @@
+.map {
+	display: none;
+	@media (min-width: $screen-md-min) {
+    display: block;
+    background-image: url("../../img/map-md.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 497px;
+  }
+  @media (min-width: 1560px) {
+  	background-image: url("../../img/map-lg.jpg");
+  	background-size: contain;
+    min-height: 760px;
+  }
+}

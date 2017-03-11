@@ -1,0 +1,50 @@
+.rates {
+
+	&__container {
+		@include container();
+	}
+
+	&__title {
+		font-family: $font-family--fedrasans;
+		font-weight: 300;
+		font-size: $font-size--title;
+		// line-height: ;
+		margin-bottom: 100px;
+		position: relative;
+		@media (min-width: $screen-md-min) {
+			font-size: 32px;
+			text-align: center;
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 36px;
+		}
+
+		&::after {
+			width: 80px;
+			height: 4px;
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			background-color: $green;
+			@media (min-width: $screen-md-min) {
+				width: 40px;
+				height: 2px;
+				bottom: -25px;
+				left: 50%;
+				transform:translateX(-50%);
+			}
+		}
+	}
+
+	&__exchanges {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $screen-sm-min) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-left: -35px;
+			margin-right: -35px;
+		}
+	}
+}

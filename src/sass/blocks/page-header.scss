@@ -1,0 +1,13 @@
+.page-header {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	// position: relative;
+
+	&__container {
+		@include container();
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+}

@@ -1,0 +1,41 @@
+.main-nav {
+	display: none;
+	@media (min-width: $screen-md-min) {
+    display: block;
+    flex: 1 1 62.5%;
+  }
+  @media (min-width: $screen-lg-min) {
+    display: block;
+    flex: 0 0 62.5%;
+  }
+
+  &__list {
+  	list-style: none;
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+  }
+
+  &__item {
+  	margin-left: 3%;
+  	&:last-child {
+  		margin-left: 35px;
+  		@media (min-width: $screen-lg-min) {
+		    margin-left: 12%;
+		  }
+  	}
+  }
+
+  &__link {
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	font-family: $font-family--gillsans;
+  	font-weight: 400;
+  	font-size: 12px;
+  	color: $green;
+  	white-space: nowrap;
+  	&--active {
+  		color: $gray;
+  	}
+  }
+}
