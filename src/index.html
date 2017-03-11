@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
+  <script>@@include('fonts/font_loading.js')</script>
+  <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
+  <noscript><link rel="stylesheet" href="css/fonts_woff.css"></noscript>
+
+  @@include('_include/page-head.html')
+  <title>Document</title>
+</head>
+<body>
+<!--   @@include('img/sprite-svg.svg')
+  <svg width="250" height="250"><use xlink:href="#tea-cup"></use></svg> -->
+  <header class="page-header">
+  	<div class="container">
+      <div class="main-logo">
+        <img src="img/main-logo.png" alt="logo-exante" width="171" height="50">
+      </div>
+
+      <a class="toggler" id="toggler"><span class="toggler__icon"></span></a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Markets</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Technology</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Company</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Contacts</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Press</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Free demo</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--language">Eng</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="features">
+      <div class="container">
+    		<ul class="features__menu">
+    			<li class="features__menu-item features__menu-item--stocks features__menu-item--active">Stocks & ETFs</li>
+    			<li class="features__menu-item features__menu-item--forex">Forex & Metals</li>
+    			<li class="features__menu-item features__menu-item--futures">Futures</li>
+    			<li class="features__menu-item features__menu-item--options">Options</li>
+    			<li class="features__menu-item features__menu-item--funds">Funds</li>
+    			<li class="features__menu-item features__menu-item--bonds">Bonds</li>
+    		</ul>
+
+    		<div class="features__item">
+    			<div class="features__text">
+    				<h2 class="features__text-title">Stocks and ETFs</h2>
+    				<p class="features__text-description">Trading stocks online with EXANTE is easy and convenient, with over 10,000 equities from over 30 of the world’s major stock exchanges accessible through the EXANTE's Online MultiProduct Platform. Investors can trade stocks online from the US markets to exchanges in Europe, Asia and Australia directly, and from a single account.</p>
+    			</div>
+    			<div class="features__numbers">
+    				<h2 class="features__numbers-title">Why trade Stocks with EXANTE?</h2>
+    				<ul class="features__numbers-list">
+    					<li class="features__numbers-item">
+    						<span class="features__numbers-digit">10,000</span>
+    						<span class="features__numbers-description">Over 10,000 stocks</span>
+  						</li>
+    					<li class="features__numbers-item">
+    						<span class="features__numbers-digit">50+</span>
+    						<span class="features__numbers-description">50+ financial markets</span>
+  						</li>
+    					<li class="features__numbers-item">
+    						<span class="features__numbers-digit">10 ms</span>
+    						<span class="features__numbers-description">Fast execution, ultra low latency</span>
+  						</li>
+    				</ul>
+    			</div> <!-- .features__numbers -->
+    		</div> <!-- .features__item -->
+    </div>
+    </div> <!-- .features -->
+
+    <div class="map"></div>
+
+    <section class="rates">
+    	<h2 class="rates__title">Maximum rates on the main exchanges</h2>
+    	<div class="rates__exchanges">
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logoiexante-img">
+    			<h3 class="exchange__title">New York Stock Exchange</h3>
+    			<span class="exchange__country">United States</span>
+    			<span class="exchange__price">$0.02/ share</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">NASDAQ Global Markets</h3>
+    			<span class="exchange__country">United States</span>
+    			<span class="exchange__price">$0.02/ share</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">American Stock Exchange</h3>
+    			<span class="exchange__country">United States</span>
+    			<span class="exchange__price">$0.02/ share</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">London Stock Exchange</h3>
+    			<span class="exchange__country">United Kingdom</span>
+    			<span class="exchange__price">$0.05</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Moscow Exchange</h3>
+    			<span class="exchange__country">Russia</span>
+    			<span class="exchange__price">0.01%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Oslo Stock Exchange</h3>
+    			<span class="exchange__country">Norway</span>
+    			<span class="exchange__price">0.18%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Euronext Brussels</h3>
+    			<span class="exchange__country">Belgium</span>
+    			<span class="exchange__price">0.05%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Deutsche Boerse</h3>
+    			<span class="exchange__country">Germany</span>
+    			<span class="exchange__price">0.05%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Euronext Lisbon</h3>
+    			<span class="exchange__country">Portugal</span>
+    			<span class="exchange__price">0.05%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Euronext Paris</h3>
+    			<span class="exchange__country">France</span>
+    			<span class="exchange__price">0.05%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Xetra Stock Exchange</h3>
+    			<span class="exchange__country">Germany</span>
+    			<span class="exchange__price">0.05%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Hong Kong Exchanges and Clearing Limited</h3>
+    			<span class="exchange__country">Hong Kong</span>
+    			<span class="exchange__price">0.25%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Toronto Stock Exchange</h3>
+    			<span class="exchange__country">Belgium</span>
+    			<span class="exchange__price">0.02 CAD/share</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Shanghai Stock Exchange</h3>
+    			<span class="exchange__country">China</span>
+    			<span class="exchange__price">0.25%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Italian stock exchange</h3>
+    			<span class="exchange__country">Italy</span>
+    			<span class="exchange__price">0.1%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Singapore stock exchange</h3>
+    			<span class="exchange__country">Singapore</span>
+    			<span class="exchange__price">0.15%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Australian securities exchange</h3>
+    			<span class="exchange__country">Australia</span>
+    			<span class="exchange__price">0.15%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Tokyo stock exchange</h3>
+    			<span class="exchange__country">Japan</span>
+    			<span class="exchange__price">0.1%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Oslo OMX</h3>
+    			<span class="exchange__country">Norway</span>
+    			<span class="exchange__price">0.08%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Malta Stock Exchange</h3>
+    			<span class="exchange__country">Malta</span>
+    			<span class="exchange__price">Contact your manager</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Madrid stock exchange</h3>
+    			<span class="exchange__country">Spain</span>
+    			<span class="exchange__price">0.1%</span>
+    		</article>
+    		<article class="exchange">
+    			<img src="" alt="" class="exchange__logo">
+    			<h3 class="exchange__title">Swiss Exchange</h3>
+    			<span class="exchange__country">Switzerland</span>
+    			<span class="exchange__price">0.18%</span>
+    		</article>
+    	</div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">Sensible Choice for Consious Investor</h2>
+        <div class="advantages__list">
+          <div class="advantages__item advantages__item--funding">
+            <p class="advantages__item-text">Minimum funding of 10,000 EUR is required to open an account.</p>
+          </div>
+          <div class="advantages__item advantages__item--min-fee">
+            <p class="advantages__item-text">EXANTE does not charge a minimum fee per order.</p>
+          </div>
+          <div class="advantages__item advantages__item--commissions">
+            <p class="advantages__item-text">Stock commissions incorporate execution, exchange and clearing fees. Additional regulatoryfees may also apply.</p>
+          </div>
+          <div class="advantages__item advantages__item--provision">
+            <p class="advantages__item-text">We provide investors with direct access to stock markets at institutional rates, and help our customers with co-locations and market data to satisfy the demands of state-of-the-art algorithmic trading.</p>
+          </div>
+          <div class="advantages__item advantages__item--short-selling">
+            <p class="advantages__item-text">Short selling is available for liquid stocks with either a pre-defined limit or utilising a daily locate procedure. Limits and rates depend on the stock, clients' trading strategy, and current market conditions.</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn--bordered">Open an Account</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="social">
+      <a href="#" class="social__link social-link social-link--fb"></a>
+      <a href="#" class="social__link social-link social-link--In"></a>
+      <a href="#" class="social__link social-link social-link--yt"></a>
+      <a href="#" class="social__link social-link social-link--tw"></a>
+      <a href="#" class="social__link social-link social-link--lnst"></a>
+      <a href="#" class="social__link social-link social-link--rss"></a>
+    </div>
+    <div class="page-footer__menu">
+      <ul class="page-footer__menu-list">
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Privacy & Security</a></li>
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Services Agreement</a></li>
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Terms of Use</a></li>
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Disclaimer</a></li>
+      </ul>
+      <ul class="page-footer__menu-list">
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Regulatory Disclousres</a></li>
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Help Center</a></li>
+        <li class="page-footer__menu-item"><a href="#" class="page-footer__menu-link">Site map</a></li>
+      </ul>
+    </div>
+    <a href="#" class="full-version">Full version</a>
+    <form action="" class="page-footer__form">
+      <input type="search" class="page-footer__search">
+    </form>
+    <div class="page-footer__copyright">
+      <div class="page-footer__copyright-list">
+        <p class="page-footer__copyright-text">Copyright 2016 XNT. All rights Reserved.</p>
+        <p class="page-footer__copyright-text">XNT Ltd. is incorporated as a Limited Liability Company under Malta Law.</p>
+        <p class="page-footer__copyright-text">XNT Ltd. is regulated by the Malta Financial Services Authority and governed by MiFID.</p>
+        <p class="page-footer__copyright-text">XNT Ltd. is authorised to provide the Investment Services by the MFSA.Licenсe No.:IS/52182.</p>
+        <p class="page-footer__copyright-text">XNT Ltd. is authorised in the UK by the Financial Conduct</p>
+      </div>
+      <div class="page-footer__copyright-list">
+        <p class="page-footer__copyright-text">Authority (FRN 620980)</p>
+        <p class="page-footer__copyright-text">Restricted Regions: XNT Ltd. does not provide services for citizens of certain regions, such as The United States of America.</p>
+        <p class="page-footer__copyright-text">EXANTE® is a registered trademark of XNT Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
