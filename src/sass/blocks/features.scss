@@ -30,8 +30,6 @@
 	  }
 
 		&-item {
-
-			// border: 1px dashed green;
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-start;
@@ -50,6 +48,11 @@
 		    font-size: 18px;
 		    cursor: pointer;
 		  }
+		  @media (min-width: $screen-lg-min) {
+		    flex-direction: row;
+		    width: 14.375%;
+		    margin-right: auto;
+		  }
 
 		  &-img {
 		  	flex:1 1 32%;
@@ -58,6 +61,10 @@
 			    width: 37.5%;
 			    flex: 0 0 auto;
 			    margin-bottom: 15px;
+			  }
+			  @media (min-width: $screen-lg-min) {
+			    margin-right: 10%;
+			    margin-bottom: 0;
 			  }
 
 		  	svg {
@@ -73,7 +80,11 @@
 		  	@media (min-width: $screen-md-min) {
 			    padding-left: 0;
 			    text-align: center;
-			    padding: 0 25%;
+			    max-width: 50%;
+		  	}
+		  	@media (min-width: $screen-lg-min) {
+			    max-width: 100%;
+			    text-align: left;
 		  	}
 		  }
 
