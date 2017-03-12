@@ -4,22 +4,22 @@
 	padding-bottom: 90px;
 	text-align: center;
 
-	&__container {
-		@include container();
-	}
-
 	@media (min-width: $screen-md-min) {
+  	background: radial-gradient(#288d4f, #075831);
 		padding-top: 75px;
 		padding-bottom: 80px;
 	}
 
 	@media (min-width: $screen-lg-min) {
-		background-image: url(../../img/advantages-bg.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center top;
+		background: url(../../img/advantages-bg.png) no-repeat, radial-gradient(#288d4f, #075831);
+		background-size: contain;
+		background-position: center;
 		padding-top: 90px;
 		padding-bottom: 100px;
+	}
+
+	&__container {
+		@include container();
 	}
 
 	&__title {
@@ -28,7 +28,6 @@
 		font-weight: 400;
 		color: #fff;
 		text-align: center;
-		// margin-bottom: 110px;
 		margin-bottom: 200px;
 		position: relative;
 
@@ -50,13 +49,11 @@
 		}
 
 		@media (min-width: $screen-md-min) {
-			margin-bottom: 95px;
 			font-size: 32px;
 			font-weight: 300;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			margin-bottom: 75px;
 			font-size: 36px;
 		}
 	}
@@ -69,33 +66,38 @@
 			flex-direction: row;
 			justify-content: space-around;
 			flex-wrap: wrap;
-			padding-bottom: 30px;
-		}
-		@media (min-width: $screen-md-min) {
-			padding-bottom: 90px;
+			padding-bottom: 0;
 		}
 	}
 
 	&__item {
-		border: 1px solid white;
+		// border: 1px solid white;
 		text-align: center;
-		// margin-bottom: 70px;
-		margin-bottom: 210px;
+		margin-bottom: 250px;
 		font-family: $font-family--gillsans;
 		font-size: $font-size--base;
 		font-weight: 300;
 		color: #fff;
 		position: relative;
+		&:first-child {
+			margin-bottom: 180px;
+			@media (min-width: $screen-md-min) {
+				margin-bottom: 150px;
+			}
+		}
+		&:last-child {
+			margin-bottom: 85px;
+			@media (min-width: $screen-md-min) {
+				margin-bottom: 150px;
+			}
+		}
 
 
 		@media (min-width: $screen-md-min) {
 			flex: 1 1 33%;
-			margin-bottom: 40px;
+			margin-bottom: 150px;
 			font-size: 18px;
-		}
-
-		@media (min-width: $screen-lg-min) {
-			margin-bottom: 15px;
+			line-height: 30px;
 		}
 
 		&--provision,
@@ -105,47 +107,82 @@
 			}
 		}
 
-		// &::before {
-		// 	width: 150px;
-		// 	height: 150px;
-		// 	content: '';
-		// 	position: absolute;
-		// 	bottom: calc(100% + 35px - 50px);
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// 	background-repeat: no-repeat;
-		// 	background-position: center;
-		// }
+		&::before {
+			// border: 1px solid red;
+			width: 100%;
+			content: '';
+			position: absolute;
+			bottom: calc(100% + 30px);
+			left: 50%;
+			transform: translateX(-50%);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 
-		// &--funding {
-		// 	&::before{
-		// 		background-image: url("../img/icon-1_euro.svg");
-		// 	}
-		// }
+		&--funding {
+			&::before {
+				width: 220px;
+				height: 50px;
+				background-image: url("../img/icon-1_euro.svg");
+				background-size: cover;
+				background-position: center;
+				@media (min-width: $screen-md-min) {
+					width: 130px;
+					height: 32px;
+				}
+			}
+		}
 
-		// &--min-fee {
-		// 	&::before{
-		// 		background-image: url("../img/icon-2_money.svg");
-		// 	}
-		// }
+		&--min-fee {
+			&::before {
+				width: 200px;
+				height: 70px;
+				background-image: url("../img/icon-2_money.svg");
+				background-size: cover;
+				@media (min-width: $screen-md-min) {
+					width: 150px;
+					height: 50px;
+				}
+			}
+		}
 
-		// &--commissions {
-		// 	&::before{
-		// 		background-image: url("../img/icon-3_smile.svg");
-		// 	}
-		// }
+		&--commissions {
+			&::before{
+				width: 300px;
+				height: 140px;
+				background-image: url("../img/icon-3_smile.svg");
+				background-size: cover;
+				@media (min-width: $screen-md-min) {
+					width: 140px;
+					height: 60px;
+				}
+			}
+		}
 
-		// &--provision {
-		// 	&::before{
-		// 		background-image: url("../img/icon-4_check.svg");
-		// 		background-color: transparent;
-		// 	}
-		// }
+		&--provision {
+			&::before{
+				background-image: url("../img/icon-4_check.svg");
+				width: 300px;
+				height: 140px;
+				background-size: cover;
+				@media (min-width: $screen-md-min) {
+					width: 130px;
+					height: 60px;
+				}
+			}
+		}
 
-		// &--short-selling {
-		// 	&::before{
-		// 		background-image: url("../img/icon-5_updown.svg");
-		// 	}
-		// }
+		&--short-selling {
+			&::before{
+				background-image: url("../img/icon-5_updown.svg");
+				width: 300px;
+				height: 120px;
+				background-size: cover;
+				@media (min-width: $screen-md-min) {
+					width: 170px;
+					height: 65px;
+				}
+			}
+		}
 	}
 }
