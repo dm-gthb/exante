@@ -128,7 +128,7 @@
 			font-family: $font-family--fedrasans;
 			font-size: $font-size--big-title;
 			// line-height: ;
-			// font-weight: bold;
+			font-weight: 300;
 			margin-bottom: 30px;
 			position: relative;
 			@media (min-width: $screen-md-min) {
@@ -147,8 +147,8 @@
 		}
 
 		&-description {
-			font-family: $font-family--gillsans;
-			font-weight: light;
+			font-family: $font-family--gillsans-light;
+			font-weight: 300;
 			font-size: $font-size--base;
 			line-height: $line-height--base;
 			@media (min-width: $screen-md-min) {
@@ -168,7 +168,7 @@
 			font-family: $font-family--fedrasans;
 			font-size: $font-size--title;
 			// line-height: ;
-			// font-weight: bold;
+			font-weight: 300;
 			margin-bottom: 95px;
 			position: relative;
 
@@ -222,8 +222,8 @@
 
 		&-digit {
 			font-size: 56px;
-			font-family: $font-family--gillsans;
-			// font-weight: bold;
+			font-family: $font-family--fedrasans;
+			font-weight: 300;
 			color: $green-light;
 			display: block;
 			margin-bottom: 25px;
