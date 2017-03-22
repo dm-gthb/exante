@@ -77,7 +77,7 @@
 
 		&-link {
 			color: $green;
-			font-family: $font-family--gillsans;
+			font-family: $font-family--gillsans-light;
 			font-size: 18px;
 			font-weight: 300;
 			&:hover {
@@ -127,7 +127,7 @@
 	}
 
 	&__copyright {
-		font-family: $font-family--gillsans;
+		font-family: $font-family--gillsans-light;
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 300;	

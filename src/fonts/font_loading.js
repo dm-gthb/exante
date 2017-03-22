@@ -75,12 +75,6 @@ function loadFont(fontName, woffUrl, woff2Url) {
 
 // Вызываем функцию подгрузки
 loadFont(
-    'Open Sans_my',                      // название шрифта
-    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
-  );
-
-loadFont(
     'Fedra Sans',                      // название шрифта
     '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
     '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
@@ -88,6 +82,12 @@ loadFont(
 
 loadFont(
     'Gill Sans',                      // название шрифта
+    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+  );
+
+loadFont(
+    'Gill Sans Light',                      // название шрифта
     '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
     '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
   );

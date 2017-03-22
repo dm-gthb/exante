@@ -127,7 +127,6 @@
 		&-title {
 			font-family: $font-family--fedrasans;
 			font-size: $font-size--big-title;
-			// line-height: ;
 			font-weight: 300;
 			margin-bottom: 30px;
 			position: relative;
@@ -236,7 +235,7 @@
 		&-description {
 			font-size: 32px;
 			// line-height: 30px;
-			font-family: $font-family--fedrasans;
+			font-family: $font-family--gillsans-light;
 			font-weight: light;
 			display: block;
 			@media (min-width: $screen-md-min) {

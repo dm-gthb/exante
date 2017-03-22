@@ -4,20 +4,6 @@
 */
 
 @font-face {
-  font-family: 'Open Sans_my';
-  src: url('opensans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans_my';
-  src: url('opensans_bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Fedra Sans';
   src: url('FedraSansPro-Light.woff') format('woff');
   font-weight: 300;
@@ -39,22 +25,15 @@
 }
 
 @font-face {
-  font-family: 'Fedra Sans';
-  src: url('FedraSansPro-Bold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Gill Sans Light';
   src: url('GillSansMT_Light.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gill Sans';
   src: url('GillSansMT.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
