@@ -2,28 +2,33 @@
 	display: none;
 	@media (min-width: $screen-md-min) {
     display: block;
-    flex: 1 1 62.5%;
+    width: 71%;
+    padding: 12px 0;
   }
   @media (min-width: $screen-lg-min) {
     display: block;
-    flex: 0 0 62.5%;
+    margin-left: 15%;
+  }
+
+  @media (min-width: $screen-xlg-min) {
+    margin-left: 25%;
   }
 
   &__list {
   	list-style: none;
   	display: flex;
-  	justify-content: space-between;
+  	justify-content: flex-start;
   	flex-wrap: wrap;
+    @media (min-width: $screen-lg-min) {
+    }
   }
 
   &__item {
-  	margin-left: 3%;
-  	&:last-child {
-  		margin-left: 35px;
-  		@media (min-width: $screen-lg-min) {
-		    margin-left: 12%;
-		  }
-  	}
+  	margin-right: 3%;
+
+    @media (min-width: $screen-lg-min) {
+      margin-right: auto;
+    }
   }
 
   &__link {
@@ -32,10 +37,22 @@
   	font-family: $font-family--gillsans;
   	font-weight: 400;
   	font-size: 12px;
+    line-height: 30px;
   	color: $green;
   	white-space: nowrap;
+    letter-spacing: 2px;
+    @media (min-width: $screen-xlg-min) {
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   	&--active {
   		color: $gray;
+      &:hover {
+        text-decoration: none;
+      }
   	}
   }
 }
