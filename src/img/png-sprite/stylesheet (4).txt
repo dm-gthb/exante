@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-language {
+    width: 10px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-rates-active-menu-point {
+    width: 42px;
+    height: 44px;
+    background-position: -25px -5px;
+}
+
+.sprite-rates-passive-menu-point {
+    width: 43px;
+    height: 42px;
+    background-position: -77px -5px;
+}
+
+.sprite-search {
+    width: 46px;
+    height: 46px;
+    background-position: -77px -57px;
+}
+
+.sprite-search-2 {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -113px;
+}
