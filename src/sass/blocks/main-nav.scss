@@ -19,8 +19,6 @@
   	display: flex;
   	justify-content: flex-start;
   	flex-wrap: wrap;
-    @media (min-width: $screen-lg-min) {
-    }
   }
 
   &__item {
@@ -54,5 +52,24 @@
         text-decoration: none;
       }
   	}
+  }
+
+
+  &--active {
+    display: block;
+    .main-nav__list {
+      text-align: center;
+      list-style: none;
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      width: 100%;
+      flex-direction: column;
+      .main-nav__item {
+        margin-right: 0;
+      }
+    }
   }
 }

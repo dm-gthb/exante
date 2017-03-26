@@ -11,6 +11,9 @@
 	letter-spacing: 2px;
 	line-height: 30px;
 	position: relative;
+	&:hover {
+    text-decoration: underline;
+  }
 	@media (min-width: $screen-md-min) {
     display: block;
   }
