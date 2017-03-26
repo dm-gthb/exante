@@ -2,16 +2,52 @@
 
 	&__container {
 		@include container();
+		position: relative;
+	}
+
+	&__control {
+		position: absolute;
+		display: none;
+		cursor: pointer;
+		fill: #ddd;
+		@media (min-width: $screen-sm-min) {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+		@media (min-width: $screen-md-min) {
+			width: 40px;
+			height: 40px;
+		}
+		&--1 {
+			// width: 43px;
+	    // height: 42px;
+	    top: 0;
+	    left: 80px;
+	    @media (min-width: $screen-xlg-min) {
+				left: 150px;
+	    }
+		}
+
+		&--2 {
+			// width: 42px;
+	    // height: 44px;
+	    // background-position: -25px -5px;
+	    top: 0;
+	    left: 120px;
+	    @media (min-width: $screen-xlg-min) {
+				left: 230px;
+	    }
+		}
 	}
 
 	&__title {
 		font-family: $font-family--fedrasans;
 		font-weight: 300;
 		font-size: $font-size--title;
-		// line-height: ;
 		margin-bottom: 100px;
 		position: relative;
-		@media (min-width: $screen-md-min) {
+		@media (min-width: $screen-sm-min) {
 			font-size: 32px;
 			text-align: center;
 		}
@@ -27,7 +63,7 @@
 			bottom: -40px;
 			left: 0;
 			background-color: $green;
-			@media (min-width: $screen-md-min) {
+			@media (min-width: $screen-sm-min) {
 				width: 40px;
 				height: 2px;
 				bottom: -25px;
