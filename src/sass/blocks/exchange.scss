@@ -10,9 +10,9 @@
 		right: -16.6%;
 		@media (min-width: $screen-sm-min) {
 			left: -45px;
-			right: -52px;
+			right: -45px;
 		}
-		@media (min-width: $screen-lg-min) {
+		@media (min-width: $screen-xlg-min) {
 			left: -115px;
 			right: -115px;
 		}
@@ -21,10 +21,10 @@
 	&:last-child {
 		&::after {
 			@media (min-width: $screen-sm-min) {
-				right: calc(-200% - 58px);
+				right: calc(-200% - 45px);
 			}
 
-			@media (min-width: $screen-lg-min) {
+			@media (min-width: $screen-xlg-min) {
 				right: calc(-200% - 121px);
 			}
 		}
