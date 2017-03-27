@@ -11,12 +11,15 @@
 	letter-spacing: 2px;
 	line-height: 30px;
 	position: relative;
+
 	&:hover {
     text-decoration: underline;
   }
+
 	@media (min-width: $screen-md-min) {
     display: block;
   }
+  
   @media (min-width: $screen-xlg-min) {
 		margin-left: 3%;
 		font-size: 14px;

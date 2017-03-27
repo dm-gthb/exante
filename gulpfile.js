@@ -113,7 +113,7 @@ gulp.task('js', function () {
   return gulp.src([
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
-      dirs.source + '/js/owl.carousel.min.js',
+      // dirs.source + '/js/owl.carousel.min.js',
       dirs.source + '/js/script.js',
     ])
     .pipe(concat('script.min.js'))
@@ -140,27 +140,6 @@ gulp.task('css:fonts:woff', function (callback) {
     callback();
 }
 });
-
-// ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF2
-// gulp.task('css:fonts:woff2', function (callback) {
-//   let fontCssPath = dirs.source + '/fonts/fonts_woff2.css'; // с каким исходным файлом работаем
-//   if(fileExist(fontCssPath) !== false) { // если исходный файл существует, продолжим
-//     return gulp.src(fontCssPath)
-//       .pipe(base64({                   // ищем в CSS файле подключения сторонних ресурсов, чтоб закодировать base64 и вставить прямо в файл
-//         // baseDir: '/',
-//         extensions: ['woff2'],         // только указанного тут формата ресурсов
-//         maxImageSize: 1024*1024,       // максимальный размер в байтах
-//         deleteAfterEncoding: false,    // не удаляем исходный ресурс после работы!
-//         // debug: true
-//       }))
-//       .pipe(replace('application/octet-stream;', 'application/font-woff2;')) // костыль, ибо mime плагин для woff2 определяет некорректно
-//       .pipe(gulp.dest(dirs.build + '/css')); // пишем в папку билда, именно оттуда сей файл будет стягиваться JS-ом
-//   }
-//   else {
-//     console.log('Файла, из которого генерируется CSS с base64-кодированным шрифтом, нет');
-//     callback();
-//   }
-// });
 
 // ЗАДАЧА: Сборка всего
 gulp.task('build', gulp.series(                             // последовательно:
