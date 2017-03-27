@@ -38,51 +38,60 @@
 
   <main>
 
+    <div class="contacts-online">
+      <a href="#" class="contacts-online__link">Contact us online</a>
+      <svg class="contacts-online__img"><use xlink:href="#plane"></use></svg>
+    </div>
+
     <div class="features">
       <div class="features__container">
-    		<ul class="features__menu">
-    			<li class="features__menu-item features__menu-item--active">
-            <div class="features__menu-item-img">
-              <img src="img/markets-1.svg" alt="">
-            </div>
-            <p class="features__menu-item-title">Stocks & ETFs</p>
-         </li>
+        <div class="features__navigation">
+          <svg class="features__navigation-control features__navigation-control--1"><use xlink:href="#arrow-left"></use></svg>
+          <svg class="features__navigation-control features__navigation-control--2"><use xlink:href="#arrow-right"></use></svg>
+      		<ul class="features__menu">
+      			<li class="features__menu-item features__menu-item--active">
+              <div class="features__menu-item-img">
+                <img src="img/markets-1.svg" alt="">
+              </div>
+              <p class="features__menu-item-title">Stocks & ETFs</p>
+           </li>
 
-    			<li class="features__menu-item">
-            <div class="features__menu-item-img">
-               <img src="img/markets-2.svg" alt="">
-            </div>
-            <p class="features__menu-item-title">Forex & Metals</p>
-          </li>
+      			<li class="features__menu-item">
+              <div class="features__menu-item-img">
+                 <img src="img/markets-2.svg" alt="">
+              </div>
+              <p class="features__menu-item-title">Forex & Metals</p>
+            </li>
 
-    			<li class="features__menu-item">
-            <div class="features__menu-item-img">
-              <img src="img/markets-3.svg" alt="">
-            </div>
-            <p class="features__menu-item-title">Futures</p>
-          </li>
+      			<li class="features__menu-item">
+              <div class="features__menu-item-img">
+                <img src="img/markets-3.svg" alt="">
+              </div>
+              <p class="features__menu-item-title">Futures</p>
+            </li>
 
-    			<li class="features__menu-item">
-            <div class="features__menu-item-img">
-               <img src="img/markets-4.svg" alt="">
-            </div>
-            <p class="features__menu-item-title"> Options</p>
-         </li>
+      			<li class="features__menu-item">
+              <div class="features__menu-item-img">
+                 <img src="img/markets-4.svg" alt="">
+              </div>
+              <p class="features__menu-item-title"> Options</p>
+           </li>
 
-    			<li class="features__menu-item">
-            <div class="features__menu-item-img">
-               <img src="img/markets-5.svg" alt="">
-            </div>
-            <p class="features__menu-item-title">Funds</p>
-          </li>
+      			<li class="features__menu-item">
+              <div class="features__menu-item-img">
+                 <img src="img/markets-5.svg" alt="">
+              </div>
+              <p class="features__menu-item-title">Funds</p>
+            </li>
 
-    			<li class="features__menu-item">
-            <div class="features__menu-item-img">
-               <img src="img/markets-6.svg" alt="">
-            </div>
-            <p class="features__menu-item-title">Bonds</p>
-          </li>
-    		</ul>
+      			<li class="features__menu-item">
+              <div class="features__menu-item-img">
+                 <img src="img/markets-6.svg" alt="">
+              </div>
+              <p class="features__menu-item-title">Bonds</p>
+            </li>
+      		</ul>
+        </div>
 
     		<div class="features__item features__item--active">
     			<div class="features__text">
@@ -113,235 +122,276 @@
     <div class="map"></div>
 
     <section class="rates">
-      <div class="rates__container">
-      	<h2 class="rates__title">Maximum rates<br> on the main exchanges</h2>
-<!--         <div class="rates__control rates__control--1"></div>
-        <div class="rates__control rates__control--2 rates__control--active"></div> -->
-
-        <svg class="rates__control rates__control--1"><use xlink:href="#rates-1"></use></svg>
-        <svg class="rates__control rates__control--2 rates__control--active"><use xlink:href="#rates-2"></use></svg>
-      	<div class="rates__exchanges">
+      <h2 class="rates__title">Maximum rates<br> on the main exchanges</h2>
+      <svg class="rates__control rates__control--1"><use xlink:href="#rates-1"></use></svg>
+      <svg class="rates__control rates__control--2 rates__control--active"><use xlink:href="#rates-2"></use></svg>
+      <div class="rates__blocks">
+        <div class="rates__blocks-container">
       		<article class="exchange">
-            <div class="exchange__logo">
-        			<img src="../img/nyse.png" alt="nyse" class="exchange__logo-img" width="100" height="37">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">New York Stock Exchange</h3>
-        			<span class="exchange__country">United States</span>
-        			<span class="exchange__price">$0.02/ share</span>
+            <div class="exchange__inner">
+              <div class="exchange__logo">
+          			<img src="../img/nyse.png" alt="nyse" class="exchange__logo-img" width="100" height="37">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">New York Stock Exchange</h3>
+          			<span class="exchange__country">United States</span>
+          			<span class="exchange__price">$0.02/ share</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/nasdaq.png" alt="" class="exchange__logo-img" width="100" height="19">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">NASDAQ Global Markets</h3>
-        			<span class="exchange__country">United States</span>
-        			<span class="exchange__price">$0.02/ share</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/american-stock.png" alt="" class="exchange__logo-img" width="70" height="55">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">American Stock Exchange</h3>
-        			<span class="exchange__country">United States</span>
-        			<span class="exchange__price">$0.02/ share</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/nasdaq.png" alt="" class="exchange__logo-img" width="100" height="19">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">NASDAQ Global Markets</h3>
+          			<span class="exchange__country">United States</span>
+          			<span class="exchange__price">$0.02/ share</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/london-stock.png" alt="" class="exchange__logo-img" width="60" height="60">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">London Stock Exchange</h3>
-        			<span class="exchange__country">United Kingdom</span>
-        			<span class="exchange__price">$0.05</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/moscow.png" alt="" class="exchange__logo-img" width="70" height="40">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Moscow Exchange</h3>
-        			<span class="exchange__country">Russia</span>
-        			<span class="exchange__price">0.01%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/american-stock.png" alt="" class="exchange__logo-img" width="70" height="55">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">American Stock Exchange</h3>
+          			<span class="exchange__country">United States</span>
+          			<span class="exchange__price">$0.02/ share</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/oslo-stock.png" alt="" class="exchange__logo-img" width="90" height="37">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Oslo Stock Exchange</h3>
-        			<span class="exchange__country">Norway</span>
-        			<span class="exchange__price">0.18%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Euronext Brussels</h3>
-        			<span class="exchange__country">Belgium</span>
-        			<span class="exchange__price">0.05%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/london-stock.png" alt="" class="exchange__logo-img" width="60" height="60">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">London Stock Exchange</h3>
+          			<span class="exchange__country">United Kingdom</span>
+          			<span class="exchange__price">$0.05</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/deutche-bourse.png" alt="" class="exchange__logo-img" width="100" height="37">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Deutsche Boerse</h3>
-        			<span class="exchange__country">Germany</span>
-        			<span class="exchange__price">0.05%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Euronext Lisbon</h3>
-        			<span class="exchange__country">Portugal</span>
-        			<span class="exchange__price">0.05%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/moscow.png" alt="" class="exchange__logo-img" width="70" height="40">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Moscow Exchange</h3>
+          			<span class="exchange__country">Russia</span>
+          			<span class="exchange__price">0.01%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Euronext Paris</h3>
-        			<span class="exchange__country">France</span>
-        			<span class="exchange__price">0.05%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/xetra.png" alt="" class="exchange__logo-img" width="100" height="22">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Xetra Stock Exchange</h3>
-        			<span class="exchange__country">Germany</span>
-        			<span class="exchange__price">0.05%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/oslo-stock.png" alt="" class="exchange__logo-img" width="90" height="37">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Oslo Stock Exchange</h3>
+          			<span class="exchange__country">Norway</span>
+          			<span class="exchange__price">0.18%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/hkex.png" alt="" class="exchange__logo-img" width="85" height="20">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Hong Kong Exchanges and Clearing Limited</h3>
-        			<span class="exchange__country">Hong Kong</span>
-        			<span class="exchange__price">0.25%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/tsx.png" alt="" class="exchange__logo-img" width="70" height="71">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Toronto Stock Exchange</h3>
-        			<span class="exchange__country">Belgium</span>
-        			<span class="exchange__price">0.02 CAD/share</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Euronext Brussels</h3>
+          			<span class="exchange__country">Belgium</span>
+          			<span class="exchange__price">0.05%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/shanghai.png" alt="" class="exchange__logo-img" width="50" height="50">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Shanghai Stock Exchange</h3>
-        			<span class="exchange__country">China</span>
-        			<span class="exchange__price">0.25%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/italian.png" alt="" class="exchange__logo-img" width="60" height="40">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Italian stock exchange</h3>
-        			<span class="exchange__country">Italy</span>
-        			<span class="exchange__price">0.1%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/deutche-bourse.png" alt="" class="exchange__logo-img" width="100" height="37">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Deutsche Boerse</h3>
+          			<span class="exchange__country">Germany</span>
+          			<span class="exchange__price">0.05%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/singapore.png" alt="" class="exchange__logo-img" width="103" height="43">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Singapore stock exchange</h3>
-        			<span class="exchange__country">Singapore</span>
-        			<span class="exchange__price">0.15%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/asx.png" alt="" class="exchange__logo-img" width="114" height="50">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Australian securities exchange</h3>
-        			<span class="exchange__country">Australia</span>
-        			<span class="exchange__price">0.15%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Euronext Lisbon</h3>
+          			<span class="exchange__country">Portugal</span>
+          			<span class="exchange__price">0.05%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/tokyo.png" alt="" class="exchange__logo-img" width="64" height="50">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Tokyo stock exchange</h3>
-        			<span class="exchange__country">Japan</span>
-        			<span class="exchange__price">0.1%</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/nasdaq-oslo.png" alt="" class="exchange__logo-img" width="140" height="40">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Oslo OMX</h3>
-        			<span class="exchange__country">Norway</span>
-        			<span class="exchange__price">0.08%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/euronext.png" alt="" class="exchange__logo-img" width="50" height="60">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Euronext Paris</h3>
+          			<span class="exchange__country">France</span>
+          			<span class="exchange__price">0.05%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/malta.png" alt="" class="exchange__logo-img" width="57" height="50">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Malta Stock Exchange</h3>
-        			<span class="exchange__country">Malta</span>
-        			<span class="exchange__price">Contact your manager</span>
-            </div>
-      		</article>
-      		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/madrid.png" alt="" class="exchange__logo-img" width="80" height="62">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Madrid stock exchange</h3>
-        			<span class="exchange__country">Spain</span>
-        			<span class="exchange__price">0.1%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/xetra.png" alt="" class="exchange__logo-img" width="100" height="22">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Xetra Stock Exchange</h3>
+          			<span class="exchange__country">Germany</span>
+          			<span class="exchange__price">0.05%</span>
+              </div>
             </div>
       		</article>
       		<article class="exchange">
-      			<div class="exchange__logo">
-              <img src="img/swiss.png" alt="" class="exchange__logo-img" width="105" height="">
-            </div>
-      			<div class="exchange__info">
-              <h3 class="exchange__title">Swiss Exchange</h3>
-        			<span class="exchange__country">Switzerland</span>
-        			<span class="exchange__price">0.18%</span>
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/hkex.png" alt="" class="exchange__logo-img" width="85" height="20">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Hong Kong Exchanges and Clearing Limited</h3>
+          			<span class="exchange__country">Hong Kong</span>
+          			<span class="exchange__price">0.25%</span>
+              </div>
             </div>
       		</article>
-      	</div>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/tsx.png" alt="" class="exchange__logo-img" width="70" height="71">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Toronto Stock Exchange</h3>
+          			<span class="exchange__country">Belgium</span>
+          			<span class="exchange__price">0.02 CAD/share</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/shanghai.png" alt="" class="exchange__logo-img" width="50" height="50">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Shanghai Stock Exchange</h3>
+          			<span class="exchange__country">China</span>
+          			<span class="exchange__price">0.25%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/italian.png" alt="" class="exchange__logo-img" width="60" height="40">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Italian stock exchange</h3>
+          			<span class="exchange__country">Italy</span>
+          			<span class="exchange__price">0.1%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/singapore.png" alt="" class="exchange__logo-img" width="103" height="43">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Singapore stock exchange</h3>
+          			<span class="exchange__country">Singapore</span>
+          			<span class="exchange__price">0.15%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/asx.png" alt="" class="exchange__logo-img" width="114" height="50">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Australian securities exchange</h3>
+          			<span class="exchange__country">Australia</span>
+          			<span class="exchange__price">0.15%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/tokyo.png" alt="" class="exchange__logo-img" width="64" height="50">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Tokyo stock exchange</h3>
+          			<span class="exchange__country">Japan</span>
+          			<span class="exchange__price">0.1%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/nasdaq-oslo.png" alt="" class="exchange__logo-img" width="140" height="40">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Oslo OMX</h3>
+          			<span class="exchange__country">Norway</span>
+          			<span class="exchange__price">0.08%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/malta.png" alt="" class="exchange__logo-img" width="57" height="50">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Malta Stock Exchange</h3>
+          			<span class="exchange__country">Malta</span>
+          			<span class="exchange__price">Contact your manager</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/madrid.png" alt="" class="exchange__logo-img" width="80" height="62">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Madrid stock exchange</h3>
+          			<span class="exchange__country">Spain</span>
+          			<span class="exchange__price">0.1%</span>
+              </div>
+            </div>
+      		</article>
+      		<article class="exchange">
+            <div class="exchange__inner">
+        			<div class="exchange__logo">
+                <img src="img/swiss.png" alt="" class="exchange__logo-img" width="105" height="">
+              </div>
+        			<div class="exchange__info">
+                <h3 class="exchange__title">Swiss Exchange</h3>
+          			<span class="exchange__country">Switzerland</span>
+          			<span class="exchange__price">0.18%</span>
+              </div>
+            </div>
+      		</article>
+        </div>
       </div>
     </section>
 

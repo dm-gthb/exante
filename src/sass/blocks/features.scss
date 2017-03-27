@@ -1,4 +1,5 @@
 .features {
+	
 
 	&__container {
 		@include container();
@@ -21,10 +22,11 @@
 		margin: 0;
 		margin-bottom: 70px;
 		display: flex;
-		// border: 1px solid red;
-		-webkit-order: 0;
+		// order: 0;
+		// -webkit-order: 0;
 		@media (min-width: $screen-md-min) {
-	    -webkit-order: 1;
+			// order: 1;
+	    // -webkit-order: 1;
 	    margin-bottom: 0;
 
 	  }
@@ -241,6 +243,41 @@
 			@media (min-width: $screen-md-min) {
 		    font-size: 18px;
 		  }
+		}
+	}
+
+	&__navigation {
+		position: relative;
+		z-index: -1000;
+		order:0;
+		-moz-order: 0;
+		-webkit-order: 0;
+		@media (min-width: $screen-md-min) {
+			order:0;
+			-moz-order: 1;
+	    -webkit-order: 1;
+	  }
+
+		&-control {
+			position: absolute;
+			cursor: pointer;
+			display: block;
+			width: 20px;
+			height: 35px;
+			transform: translateY(-50%);
+			@media (min-width: $screen-md-min) {
+		    display: none;
+		  }
+
+			&--1 {
+		    top: calc(50% - 65px);
+		    left: -35px;
+			}
+
+			&--2 {
+		    top: calc(50% - 65px);
+		    right: -35px;
+			}
 		}
 	}
 }
