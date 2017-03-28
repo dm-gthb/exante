@@ -1,7 +1,7 @@
 .main-nav {
-	display: none;
+  display: none;
 
-	@media (min-width: $screen-md-min) {
+  @media (min-width: $screen-md-min) {
     display: block;
     width: 71%;
     padding: 12px 0;
@@ -17,14 +17,14 @@
   }
 
   &__list {
-  	list-style: none;
-  	display: flex;
-  	justify-content: flex-start;
-  	flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   &__item {
-  	margin-right: 3%;
+    margin-right: 3%;
 
     @media (min-width: $screen-lg-min) {
       margin-right: auto;
@@ -32,14 +32,14 @@
   }
 
   &__link {
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	font-family: $font-family--gillsans;
-  	font-weight: 400;
-  	font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-family--gillsans;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 30px;
-  	color: $green;
-  	white-space: nowrap;
+    color: $green;
+    white-space: nowrap;
     letter-spacing: 2px;
 
     @media (min-width: $screen-xlg-min) {
@@ -51,12 +51,12 @@
       text-decoration: underline;
     }
     
-  	&--active {
-  		color: $gray;
+    &--active {
+      color: $gray;
       &:hover {
         text-decoration: none;
       }
-  	}
+    }
   }
 
 

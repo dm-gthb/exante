@@ -1,12 +1,12 @@
 .page-header {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-	&__container {
-		@include container();
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		position: relative;
-	}
+  &__container {
+    @include container();
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
 }

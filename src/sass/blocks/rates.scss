@@ -1,106 +1,106 @@
 .rates {
-	position: relative;
+  position: relative;
 
-	&__blocks {
-		position: relative;
-	  border-top: 1px solid $gray-lighten;
-	  border-bottom: 1px solid $gray-lighten;
-	  &-container {
-	  	padding: 0 7%;
-			@media (min-width: $screen-sm-min) {
-				padding-left: 40px;
-				padding-right: 40px;
-		    display: flex;
-		    flex-wrap: wrap;
-		  }
-		  @media (min-width: $screen-xlg-min) {
-				width: ($screen-xlg-min - 300 + 160);
-				margin: auto;
-		  }
-	  }
-	}
+  &__blocks {
+    position: relative;
+    border-top: 1px solid $gray-lighten;
+    border-bottom: 1px solid $gray-lighten;
+    &-container {
+      padding: 0 7%;
+      @media (min-width: $screen-sm-min) {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media (min-width: $screen-xlg-min) {
+        width: ($screen-xlg-min - 300 + 160);
+        margin: auto;
+      }
+    }
+  }
 
-	&__control {
-		position: absolute;
-		display: none;
-		cursor: pointer;
-		&--active {
-			.cls-1 {
-				fill: $green;
-				stroke: #0f8241;
-			}
-		}
-		@media (min-width: $screen-sm-min) {
-			display: block;
-			width: 20px;
-			height: 20px;
-		}
-		@media (min-width: $screen-md-min) {
-			width: 40px;
-			height: 40px;
-		}
-		&--1 {
-	    top: 0;
-	    left: 80px;
-	    @media (min-width: $screen-xlg-min) {
-				left: calc((100% - 1600px) / 2);
-	    }
-		}
+  &__control {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    &--active {
+      .cls-1 {
+        fill: $green;
+        stroke: #0f8241;
+      }
+    }
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+    @media (min-width: $screen-md-min) {
+      width: 40px;
+      height: 40px;
+    }
+    &--1 {
+      top: 0;
+      left: 80px;
+      @media (min-width: $screen-xlg-min) {
+        left: calc((100% - 1600px) / 2);
+      }
+    }
 
-		&--2 {
-	    top: 0;
-	    left: 120px;
-	    @media (min-width: $screen-md-min) {
-				left: 160px;
-	    }
-	    @media (min-width: $screen-xlg-min) {
-				left: calc((100% - 1400px) / 2);
-	    }
-		}
-	}
+    &--2 {
+      top: 0;
+      left: 120px;
+      @media (min-width: $screen-md-min) {
+        left: 160px;
+      }
+      @media (min-width: $screen-xlg-min) {
+        left: calc((100% - 1400px) / 2);
+      }
+    }
+  }
 
-	&__title {
-		font-family: $font-family--fedrasans;
-		font-weight: 300;
-		font-size: $font-size--title;
-		margin-bottom: 100px;
-		position: relative;
-		margin-left: 12.5%;
-		margin-right: 12.5%;
-		@media (min-width: $screen-sm-min) {
-			font-size: 32px;
-			text-align: center;
-		}
-		@media (min-width: $screen-lg-min) {
-			font-size: 36px;
-		}
+  &__title {
+    font-family: $font-family--fedrasans;
+    font-weight: 300;
+    font-size: $font-size--title;
+    margin-bottom: 100px;
+    position: relative;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    @media (min-width: $screen-sm-min) {
+      font-size: 32px;
+      text-align: center;
+    }
+    @media (min-width: $screen-lg-min) {
+      font-size: 36px;
+    }
 
-		&::after {
-			width: 80px;
-			height: 4px;
-			content: '';
-			position: absolute;
-			bottom: -40px;
-			left: 0;
-			background-color: $green;
-			@media (min-width: $screen-sm-min) {
-				width: 40px;
-				height: 2px;
-				bottom: -25px;
-				left: 50%;
-				transform:translateX(-50%);
-			}
-		}
-	}
+    &::after {
+      width: 80px;
+      height: 4px;
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      background-color: $green;
+      @media (min-width: $screen-sm-min) {
+        width: 40px;
+        height: 2px;
+        bottom: -25px;
+        left: 50%;
+        transform:translateX(-50%);
+      }
+    }
+  }
 
-	&__exchanges {
-		display: flex;
-		flex-direction: column;
-		@media (min-width: $screen-sm-min) {
-			flex-direction: row;
-			flex-wrap: wrap;
-			margin-left: -35px;
-			margin-right: -35px;
-		}
-	}
+  &__exchanges {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-sm-min) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -35px;
+      margin-right: -35px;
+    }
+  }
 }
